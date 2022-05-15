@@ -1,7 +1,7 @@
 import { Box , Text, Button } from '@chakra-ui/react'
 import { useEffect, useState } from "react";
 
-import getData from '../../sinric_pro/device_data';
+import getData from '../../sinric_pro/relay_device_data';
 
 export default function WeightFeed(){
 
