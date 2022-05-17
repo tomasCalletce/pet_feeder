@@ -4,6 +4,7 @@ import { Box , Text } from '@chakra-ui/react'
 import SetTime from './components/setTime'
 import WeightFeed from './components/weightFeed'
 
+
 export default function Home() {
   return (
     <Box w="100%" h="100vh" bgGradient="linear(to-b,#f9f9ff,#ebfcff)" display="flex" flexDirection="column" alignItems="center"  >

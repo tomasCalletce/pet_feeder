@@ -1,7 +1,7 @@
 
 import axios from 'axios'
 
-async function getData(setState){
+async function changeBool(){
 
     const res = await axios({
         method: 'POST',
@@ -29,11 +29,9 @@ async function getData(setState){
             client_id: "android-app"
         } 
     });
-    
-    setState(data.data.device.powerState);
       
 }
 
 
 
-export default getData;
+export default changeBool;

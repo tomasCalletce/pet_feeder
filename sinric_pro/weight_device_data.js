@@ -1,7 +1,7 @@
 
 const axios = require('axios')
 
-async function getData(){
+async function getWeight(setWeight){
 
     const res = await axios({
         method: 'POST',
@@ -18,7 +18,7 @@ async function getData(){
     
     const data = await axios({
         method: 'GET',
-        url: `https://api.sinric.pro/api/v1/devices/62813fbd1d6a67083b506ba9`,
+        url: `https://api.sinric.pro/api/v1/devices/6281917a1d6a67083b50a0d5`,
         headers: 
         {   
             'Authorization': `Bearer ${res.data.accessToken}`,
@@ -30,10 +30,8 @@ async function getData(){
         } 
     });
     
-
-    console.log(data.data);
-      
+    setWeight(data.data.device.temperature)
+    
 }
 
-
-getData()
+export default getWeight;
